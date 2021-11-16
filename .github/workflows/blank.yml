@@ -23,6 +23,11 @@ jobs:
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
+      - name: Login to DockerHub
+        uses: docker/login-action@v1
+        with:
+          username: dmitrymatyugin
+          password: a2a06503-194e-492a-9dbe-efd0a91bc368
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
