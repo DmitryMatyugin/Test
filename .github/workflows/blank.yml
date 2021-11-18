@@ -18,12 +18,7 @@ jobs:
   # This workflow contains a single job called "build"
   build:
     # The type of runner that the job will run on
-    runs-on: self-hosted
-    container:
-      image: regulaforensics/jenkinsbuilders:sdk-centos
-      credentials:
-        username: dmitrymatyugin
-        password: a2a06503-194e-492a-9dbe-efd0a91bc368
+    runs-on: ubuntu
 
     # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
